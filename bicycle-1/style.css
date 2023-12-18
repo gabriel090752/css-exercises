@@ -1,83 +1,108 @@
-body{
+html{
+    font-family: Arial,sans-serif;
     background: #f7f7f7;
-    font-family: Arial;
+    font-size: 20px;
 }
 .logo{
-    display: block;
-    margin-right: auto;
+    display: flex;
     margin-left: auto;
-    margin-top: 100px;
-    width: 200px;
-    height: auto;
+    margin-right: auto;
+    width: 12rem;
+    margin-top: 5rem;
 }
-.buttons p{
-    padding: 20px 50px;
-    background: rgb(255,255,255);
-    font-size: 20px;
-}
-.buttons{
-    display:flex;
+
+.link-bar{
+    list-style: none;
+    display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-top: 90px;
+    gap: 2rem;
+    margin: 7rem 0;
 }
-
-
-.text{
-    background-color: white;
-    font-size: 40px;
-    margin-left: 100px;
-    justify-items: end;
-    text-align: end;
-    padding-right: 50px;
-}
-
-a{
+.link-bar a {
     text-decoration: none;
-    background-color: red;
-    font-size: 20px;
-    padding: 20px;
-    color: white;
+    background-color: white;
+    color: black;
+    padding: 1rem 2rem;
     border-radius: 4px;
+
+}
+.link-bar a:hover{
+    background-color: red;
 }
 
-.description-and-image img{
-    height: auto;
-    width: 800px;
-    margin-right: 200px;
+.button2{
+    text-decoration: none;
+    background: red;
+    /*padding: 1rem 2rem;*/
+    border-radius: 4px;
+    color: white;
+    margin-top: 10rem;
+
 }
-.description-and-image{
-    display:grid;
+article p{
+    font-size: 32px;
+}
+article{
+    width: 29rem;
+    justify-self: end;
+    padding: 1rem;
+}
+
+article h2:after{
+    content: "";
+    display: inline-block;
+    width: 4rem;
+    height: 0.3rem;
+    background: red;
+    position:relative;
+    margin-left:28rem;
+}
+.description-and-images{
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 100px;
     justify-items: end;
-
 }
 
-.opaque{
-    grid-row: 2;
-    color: #c6c6c6;
-    font-size: 80px;
+.description-and-images img{
+    width: 30rem;
+    grid-column: 2;
+    justify-self: start;
+}
+
+.advantages{
+    display: inline-block;
+    font-size: 64px;
+    grid-column: 1;
     font-weight: bold;
-    margin-right: 20px;
-   ;
+    color: #c6c6c6;
+    background-image: url("img/onda.svg");
+    padding: 5rem 1rem;
+}
+
+.benefits h4,p{
+    margin-bottom: 0;
+}
+.benefits{
+    margin-right: auto;
+    display:grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+
+}
+.benefits:nth-child(odd){
+    background-color: #c6c6c6;
 }
 
 .benefits{
-    display:grid;
-    grid-template-columns: 1fr 4fr;
-    background: white;
-    margin-right: 200px;
+    text-decoration: none;
 }
-.benefits img{
-    width: 40px;
+.benefits .image{
+    width: 2rem;
     grid-column: 1;
-    margin-top: 20px;
-    margin-left: auto;
+    margin: 1rem 1rem;
+
 
 }
-
-.benefits div{
-    grid-column: 2;
-
+.benefits p{
+    grid-column: 2  ;
 }
