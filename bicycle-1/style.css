@@ -1,6 +1,10 @@
+html{
+    height: 1600px;
+}
+
 body{
     background: #f7f7f7;
-    font-family: Arial;
+    font-family: Arial,sans-serif;
 }
 .logo{
     display: block;
@@ -60,24 +64,31 @@ a{
     font-size: 80px;
     font-weight: bold;
     margin-right: 20px;
-   ;
+    align-self: center;
 }
 
-.benefits{
+/*.benefits{*/
+/*    display:grid;*/
+/*    grid-template-columns: 1fr 4fr;*/
+/*    background: white;*/
+/*    margin-right: 200px;*/
+/*}*/
+
+.benefits div{
     display:grid;
-    grid-template-columns: 1fr 4fr;
-    background: white;
+    grid-template-columns: 80px 1fr;
+    background-color: white;
     margin-right: 200px;
+    width: 800px;
+
+}
+.benefits div p {
+    grid-column: 2;
 }
 .benefits img{
     width: 40px;
     grid-column: 1;
     margin-top: 20px;
-    margin-left: auto;
-
-}
-
-.benefits div{
-    grid-column: 2;
+    margin-left: 20px;
 
 }
